@@ -1,0 +1,214 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+.fullScreenCart {
+  position: fixed;
+  top: 6%;
+  left: 35%;
+  width: 480px;
+  background: #ffffff;
+  padding: 20px 40px;
+  z-index: 1000;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    .titleIntro {
+      font-family: Intro Bold;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 20px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      color: #444b58;
+    }
+    .titleText {
+      font-family: Intro Book;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      text-align: right;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      color: #b2b5bb;
+    }
+  }
+
+  .cartWrapper {
+    padding: 30px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 25px;
+
+    .orderCount,
+    .totalAmount {
+      font-family: Intro Book;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      color: #b2b5bb;
+
+      margin-right: 10px;
+      margin-bottom: 20px;
+
+      .count,
+      .amount {
+        font-family: Intro Bold;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 16px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        color: #444b58;
+      }
+    }
+
+    .orderComposition {
+      .orderTitle {
+        font-family: Intro Book;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        color: #444b58;
+        margin-bottom: 17px;
+      }
+      .sneakersCart {
+        margin: 20px 0;
+        max-height: 160px;
+        overflow-y: auto;
+        .orderItem {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          margin-bottom: 14px;
+
+          .imageWrapper {
+            width: 80px;
+            height: 45px;
+            overflow: hidden;
+            .orderImage {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .orderDetails {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex-grow: 1;
+
+            .name {
+              font-family: Intro Book;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 14px;
+              text-align: left;
+              text-underline-position: from-font;
+              text-decoration-skip-ink: none;
+
+              color: #444b58;
+            }
+
+            .price {
+              font-family: Intro Bold;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 16px;
+              text-align: left;
+              text-underline-position: from-font;
+              text-decoration-skip-ink: none;
+
+              color: #444b58;
+            }
+          }
+          .trash {
+            font-family: Intro Book;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            text-align: right;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            color: #b2b5bb;
+          }
+        }
+      }
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & input {
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    padding: 10px;
+
+    border: none;
+
+    font-family: Intro Book;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: #b2b5bb;
+  }
+  & button {
+    background: #f14f4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    padding: 22px 47px 22px 47px;
+    border-radius: 4px;
+
+    //styleName: button;
+    font-family: Intro Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+
+    &:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}

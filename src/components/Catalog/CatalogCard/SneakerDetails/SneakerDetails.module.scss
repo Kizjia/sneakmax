@@ -1,0 +1,313 @@
+.modalCard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+
+  &Content {
+    background-color: #fff;
+    max-width: 1140px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+
+  &Header {
+    display: flex;
+    gap: 20px;
+  }
+
+  &Image {
+    width: auto;
+    height: 480px;
+  }
+
+  &Info {
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+
+    .modalCardData {
+      margin-bottom: 40px;
+
+      display: flex;
+      gap: 47px;
+      .article {
+        //styleName: paragraph;
+        font-family: Intro Book;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #b2b5bb;
+      }
+      .stock {
+        //styleName: paragraph;
+        font-family: Intro Book;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #b2b5bb;
+        span {
+          //styleName: paragraph;
+          font-family: Intro Book;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 16px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: #444b58;
+        }
+      }
+    }
+  }
+
+  &Title {
+    font-family: Intro Book;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: #444b58;
+    width: 430px;
+
+    margin-bottom: 15px;
+  }
+
+  &Rating {
+    width: 116px;
+    height: 20px;
+
+    margin-bottom: 15px;
+  }
+
+  .sizePrompt {
+    font-family: Intro Book;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #444b58;
+
+    margin-bottom: 15px;
+  }
+
+  .sizeOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+
+    .sizeOption {
+      box-sizing: border-box;
+      width: 70px;
+      height: 32px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: 1px solid #b2b5bb;
+      cursor: pointer;
+      border-radius: 4px;
+
+      padding: 10px 26px 10px 26px;
+      gap: 15px;
+
+      //styleName: menu;
+      font-family: Intro Book;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      transition: all 0.3s ease;
+
+      &.available {
+        background-color: white;
+      }
+
+      &.unavailable {
+        background-color: #7f3f3f1b;
+        cursor: not-allowed;
+      }
+
+      &.selected {
+        border-color: #f14f4f;
+      }
+    }
+  }
+  &Price {
+    //styleName: h2;
+    font-family: Intro Bold;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #444b58;
+
+    margin-bottom: 36px;
+  }
+  .orderButton {
+    width: 100%;
+    height: 60px;
+    border-radius: 4px;
+    border: none;
+
+    background-color: #f14f4f;
+    color: #fff;
+
+    padding: 22px 0;
+    font-size: 16px;
+
+    //styleName: button;
+    font-family: Intro Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    margin-bottom: 15px;
+
+    cursor: pointer;
+  }
+  &Bonus {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    .benefit {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      p {
+        //styleName: menu;
+        font-family: Intro Book;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #b2b5bb;
+      }
+
+      img {
+        width: 14.69px;
+        height: 11.36px;
+      }
+    }
+  }
+
+  &Details {
+    display: flex;
+    gap: 85px;
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+
+      h3 {
+        text-align: left;
+        //styleName: h3;
+        font-family: Intro Book;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #444b58;
+      }
+      p {
+        font-family: Intro Book;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #444b58;
+
+        width: 430px;
+      }
+    }
+    .specifications {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      h3 {
+        text-align: left;
+        //styleName: h3;
+        font-family: Intro Book;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #444b58;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          //styleName: paragraph;
+          font-family: Intro Book;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 16px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+
+          color: #444b58;
+          margin-bottom: 10px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .closeModalCardButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}

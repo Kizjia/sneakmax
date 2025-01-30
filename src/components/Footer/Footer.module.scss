@@ -1,0 +1,49 @@
+.footerSection {
+  background-color: #444b58;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ffffff80;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-family: 'Intro Bold', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  color: white;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+}
+
+.navLink,
+.cartWrapper {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,65 @@
+.teamSection {
+  background-color: #484283;
+  background-image: url('../../img/backgroundTeam.png');
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+  background-position: top right;
+  background-size: 340px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.heading {
+  //styleName: h2;
+  font-family: Intro Bold;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+
+  color: #fff;
+  padding-top: 60px;
+}
+
+.teamGrid {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  gap: 40px 20px;
+}
+
+.memberPhoto {
+  width: 380px;
+  height: 400px;
+}
+
+.memberName {
+  margin-top: 20px;
+
+  font-family: Intro Bold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+}
+
+.memberProfession {
+  //styleName: paragraph;
+  margin-top: 20px;
+
+  font-family: Intro Book;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+}

@@ -1,0 +1,177 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.headerCart {
+  position: absolute;
+  top: 200%;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 390px;
+  max-height: 415px;
+  overflow-y: auto;
+  padding: 10px 20px;
+  box-shadow: 0px -4px 10px 0px #000d541a;
+
+  .closeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .sneakersCart {
+    box-sizing: content-box;
+    max-height: 480px;
+    display: flex;
+    flex-direction: column;
+    // background: #ccd9f233;
+
+    .orderItem {
+      position: relative;
+      height: 120px;
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      .imageWrapper {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: auto;
+          height: 95%;
+        }
+      }
+
+      .orderDetails {
+        .name {
+          font-family: Intro Book;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: #4d4d4d;
+          margin-bottom: 2px;
+        }
+        .size {
+          font-family: Intro Book;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: #4d4d4d;
+          margin-bottom: 14px;
+        }
+
+        .price {
+          font-family: Intro Bold;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 20px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+
+          color: #4d4d4d;
+        }
+      }
+
+      .trash {
+        position: absolute;
+        top: 35%;
+        right: 0;
+
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .totalPrice {
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+
+    .sumWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .sumTitle {
+        font-family: Intro Book;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        color: #4d4d4d;
+      }
+
+      .sum {
+        font-family: Intro Bold;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #4d4d4d;
+      }
+    }
+
+    .goCartButton {
+      width: 200px;
+      height: 50px;
+
+      border-radius: 4px;
+
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      //styleName: button;
+      font-family: Intro Regular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      &:hover {
+        background-color: #c0392b;
+      }
+    }
+  }
+
+  .emptyCartTitle {
+    color: black;
+    font-size: 18px;
+    padding: 20px 0;
+  }
+}

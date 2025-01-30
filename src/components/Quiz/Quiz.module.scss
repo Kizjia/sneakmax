@@ -1,0 +1,301 @@
+.quiz {
+  background-color: #f9f9f9;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    height: 658px;
+    width: 1180px;
+    background: #fff4ee;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+    padding: 40px 100px;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-family: Intro Bold;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+
+    color: #444b58;
+
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-family: Intro Book;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #808080;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid #808080;
+
+    margin-bottom: 20px;
+  }
+
+  .question {
+    font-family: Intro Book;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: #444b58;
+
+    margin-bottom: 20px;
+  }
+
+  .answers {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 20px 70px;
+    width: 100%;
+
+    padding-bottom: 40px;
+    border-bottom: 1px solid #808080;
+
+    margin-bottom: 33px;
+  }
+
+  .answer {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 144px;
+    gap: 10px;
+
+    &Image {
+      width: 100%;
+      height: 120px;
+      border-radius: 4px;
+    }
+
+    &Label {
+      display: flex;
+      gap: 4px;
+
+      input {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #dbbba9;
+        accent-color: #fff4ee;
+      }
+    }
+  }
+
+  .answers2 {
+    display: flex;
+    gap: 22px;
+    flex-direction: column;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 40px;
+
+    margin-bottom: 20px;
+
+    .answerContent2 {
+      display: flex;
+      gap: 70px;
+
+      .answer2 {
+        display: flex;
+        gap: 70px;
+
+        &Label2 {
+          display: flex;
+          gap: 12px;
+
+          input {
+            width: 24px;
+            height: 24px;
+            border: 1px solid #dbbba9;
+            accent-color: #fff4ee;
+          }
+        }
+      }
+    }
+    &Image2 {
+      height: 282px;
+    }
+  }
+  .answerTextArea {
+    // width: 465px;
+    height: 368px;
+    // border-radius: 4px;
+    color: #dbbba9;
+    border-bottom: 1px black solid;
+    text-align: left;
+
+    margin-bottom: 33px;
+
+    .textArea {
+      width: 465px;
+      height: 246px;
+      border-radius: 4px;
+      padding: 20px;
+
+      color: black;
+      background-color: #ffffff;
+
+      //styleName: paragraph;
+      font-family: Intro Book;
+      font-size: 16px;
+      font-weight: 400;
+
+      border: none;
+      line-height: 16px;
+    }
+  }
+  .finalStep {
+    background-color: #dbbba9;
+    padding: 40px;
+
+    .formWrapper {
+      .finalTitle {
+        font-family: Intro Bold;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50.4px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-bottom: 5px;
+
+        color: #ffffff;
+      }
+
+      .finalText {
+        font-family: Intro Book;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #ffffff;
+
+        margin-bottom: 24px;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .input {
+          width: 450px;
+          padding: 10px;
+          border: none;
+
+          height: 30px;
+          border-radius: 4px;
+          background-color: #fff;
+          color: gray;
+        }
+
+        .submitButton {
+          width: 170px;
+          height: 50px;
+          border-radius: 4px;
+          background-color: #f14f4f;
+          border: none;
+
+          color: white;
+          padding: 0;
+
+          font-family: Intro Regular;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .imageOverlay {
+      position: absolute;
+      right: 9%;
+      top: 26%;
+
+      .mainImage {
+        position: relative;
+        height: 385px;
+        width: auto;
+      }
+
+      .overlayImage {
+        position: absolute;
+        height: 365px;
+        width: auto;
+
+        left: 7%;
+        top: 2%;
+      }
+    }
+  }
+
+  .slide4 {
+    position: relative;
+
+    padding: 40px 100px;
+
+    .text4 {
+      color: #dbbba9;
+      margin-bottom: 26px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #dbbba9;
+    }
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+
+    .progress {
+      //styleName: paragraph;
+      font-family: Intro Book;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      color: #808080;
+    }
+
+    .nextButton {
+      width: 211px;
+      height: 50px;
+
+      border-radius: 4px;
+      background-color: #c4c4c400;
+      border: 1px solid #444b58;
+
+      //styleName: button;
+      font-family: Intro Regular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      color: #444b58;
+    }
+  }
+}

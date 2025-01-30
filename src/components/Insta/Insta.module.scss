@@ -1,0 +1,137 @@
+.instaSection {
+  padding-top: 60px;
+  padding-bottom: 82px;
+
+  background-color: #f3f6f6;
+}
+
+.container {
+  display: flex;
+  gap: 60px;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #484283;
+  padding: 0px 20px;
+  padding-bottom: 20px;
+
+  width: 402px;
+  height: 380px;
+
+  border-radius: 4px;
+}
+
+.formTitle {
+  color: #ffffff;
+  margin-top: 40px;
+  font-family: Intro Bold;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  margin-bottom: 20px;
+}
+
+.formSubtitle {
+  //styleName: paragraph;
+  font-family: Intro Book;
+  width: 230px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.inputField {
+  width: 300px;
+  height: 50px;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Intro Book;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.submitButton {
+  width: 340px;
+  height: 60px;
+  padding: 5px 20px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #f14f4f;
+
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.instagramSection {
+  text-align: center;
+}
+
+.instagramTitle {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 33px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 15px 18px;
+}
+
+.gridItem {
+  width: 157px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.gridItem:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.gridItem:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.gridItem:nth-child(3) {
+  width: 330px;
+  height: 337px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.gridItem:nth-child(4) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.gridItem:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+}
