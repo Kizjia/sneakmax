@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/sneakmax/static/css/main.69cc7f08.css",
+    "main.js": "/sneakmax/static/js/main.50fd88ca.js",
+    "static/media/about.png": "/sneakmax/static/media/about.7b61478775f7f10f382c.png",
+    "static/media/quizBackground.png": "/sneakmax/static/media/quizBackground.e6068020268925842f67.png",
+    "static/media/member2.jpg": "/sneakmax/static/media/member2.3eee6892d34a4d4c6f96.jpg",
+    "static/media/shoes.png": "/sneakmax/static/media/shoes.cb874772c61c050a46b5.png",
+    "static/media/member5.jpg": "/sneakmax/static/media/member5.36b3274d8dc7f2e78032.jpg",
+    "static/media/inst3.jpg": "/sneakmax/static/media/inst3.2e6d3a75018b60c4da32.jpg",
+    "static/media/member1.jpg": "/sneakmax/static/media/member1.f6b8414bd39730fe5147.jpg",
+    "static/media/member3.jpg": "/sneakmax/static/media/member3.01a8bf356e113858ff23.jpg",
+    "static/media/member4.jpg": "/sneakmax/static/media/member4.01a8bf356e113858ff23.jpg",
+    "static/media/inst4.jpg": "/sneakmax/static/media/inst4.d54f6bf1dd9b9a857b8d.jpg",
+    "static/media/member6.jpg": "/sneakmax/static/media/member6.c14dc16a1bb1afb75cb2.jpg",
+    "static/media/inst5.jpg": "/sneakmax/static/media/inst5.eac19738d4b6544b87dd.jpg",
+    "static/media/inst1.jpg": "/sneakmax/static/media/inst1.d3db20252e02300d16ed.jpg",
+    "static/media/inst2.jpg": "/sneakmax/static/media/inst2.2b3b832100a1b25f2ba1.jpg",
+    "static/media/quizShoes.jpg": "/sneakmax/static/media/quizShoes.c3d805ff1db757b75295.jpg",
+    "static/media/quizIphone.png": "/sneakmax/static/media/quizIphone.ee25a702709f01174df5.png",
+    "static/media/backgroundTeam.png": "/sneakmax/static/media/backgroundTeam.35bbefc2af3224deb017.png",
+    "index.html": "/sneakmax/index.html",
+    "static/media/backgroundAbout.svg": "/sneakmax/static/media/backgroundAbout.28724dd69105566289eb.svg",
+    "main.69cc7f08.css.map": "/sneakmax/static/css/main.69cc7f08.css.map",
+    "main.50fd88ca.js.map": "/sneakmax/static/js/main.50fd88ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69cc7f08.css",
+    "static/js/main.50fd88ca.js"
+  ]
+}
